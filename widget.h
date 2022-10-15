@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "singlechoice.h"
+#include<QSoundEffect>>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -26,6 +27,7 @@ private:
     Ui::Widget *ui;
     SingleChoice * SC[100];
     static int num;
+    QSoundEffect *player;
 signals:
     void wrong();
     void right();

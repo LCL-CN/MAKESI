@@ -43,6 +43,18 @@ Widget::Widget(QWidget *parent)
                 emit wrong();
         });
     }
+
+    player=new QSoundEffect(this);
+    connect(this,&Widget::wrong,player,[=]{
+        player->setSource(QUrl::fromLocalFile(":/F"));
+        player->setVolume(1);
+        player->play();
+    });
+    connect(this,&Widget::right,player,[=]{
+        player->setSource(QUrl::fromLocalFile(":/T"));
+        player->setVolume(1);
+        player->play();
+    });
 }
 
 Widget::~Widget()

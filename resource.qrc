@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file alias="s">SingleChoice.txt</file>
+        <file alias="s">res/SingleChoice.txt</file>
+        <file alias="T">res/right.WAV</file>
+        <file alias="F">res/wrong.wav</file>
     </qresource>
 </RCC>
