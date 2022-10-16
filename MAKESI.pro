@@ -10,14 +10,17 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    scwid.cpp \
     singlechoice.cpp \
     widget.cpp
 
 HEADERS += \
+    scwid.h \
     singlechoice.h \
     widget.h
 
 FORMS += \
+    scwid.ui \
     widget.ui
 
 TRANSLATIONS += \

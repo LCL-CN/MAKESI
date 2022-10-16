@@ -8,7 +8,7 @@ class SingleChoice : public QObject
     Q_OBJECT
 public:
     explicit SingleChoice(QObject *parent = nullptr);
-    void show();
+
         QString getQ();
         void setQ(QString a);
         QString* getC();
@@ -18,7 +18,7 @@ public:
     private:
         QString question;
         QString choice[4];
-        int answer;
+        int answer;//1、2、3、4——A、B、C、D
 
 signals:
 

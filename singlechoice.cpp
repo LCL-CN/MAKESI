@@ -10,11 +10,6 @@ SingleChoice::SingleChoice(QObject *parent)
     }
 }
 
-
-void SingleChoice::show()
-{
-}
-
 QString SingleChoice::getQ()
 {
     return question;

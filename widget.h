@@ -2,8 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include "singlechoice.h"
-#include<QSoundEffect>>
+#include"scwid.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -16,20 +15,14 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-    void Read(SingleChoice*a[]);
 private slots:
-    void on_pushButton_clicked();
 
-    void on_pushButton_3_clicked();
-
+    void on_pushButton_4_clicked();
 
 private:
     Ui::Widget *ui;
-    SingleChoice * SC[100];
-    static int num;
-    QSoundEffect *player;
+    SCWid *scw;
 signals:
-    void wrong();
-    void right();
+
 };
 #endif // WIDGET_H

@@ -13,123 +13,111 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>60</y>
-     <width>861</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="mouseTracking">
-    <bool>false</bool>
-   </property>
-   <property name="readOnly">
-    <bool>true</bool>
-   </property>
-   <property name="acceptRichText">
-    <bool>false</bool>
-   </property>
-   <property name="textInteractionFlags">
-    <set>Qt::NoTextInteraction</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>850</x>
-     <y>531</y>
+     <x>310</x>
+     <y>173</y>
      <width>80</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>下一题</string>
+    <string>单选（顺序）</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>71</x>
-     <y>531</y>
+     <x>520</x>
+     <y>173</y>
      <width>80</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>单选（乱序）</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>531</y>
+     <x>310</x>
+     <y>261</y>
      <width>80</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>查看答案</string>
+    <string>多选（顺序）</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QPushButton" name="pushButton_7">
    <property name="geometry">
     <rect>
-     <x>71</x>
-     <y>245</y>
-     <width>861</width>
-     <height>241</height>
+     <x>520</x>
+     <y>261</y>
+     <width>80</width>
+     <height>21</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QRadioButton" name="radioButton">
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">buttonGroup</string>
-      </attribute>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="radioButton_2">
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">buttonGroup</string>
-      </attribute>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="radioButton_3">
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">buttonGroup</string>
-      </attribute>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="radioButton_4">
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">buttonGroup</string>
-      </attribute>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string>多选（乱序）</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>349</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>判断（顺序）</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>349</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>判断（乱序）</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>437</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>错题集</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>437</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>收藏夹</string>
+   </property>
   </widget>
  </widget>
  <resources/>
  <connections/>
- <buttongroups>
-  <buttongroup name="buttonGroup"/>
- </buttongroups>
 </ui>
