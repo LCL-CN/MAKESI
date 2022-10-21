@@ -9,12 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    disorder.cpp \
     main.cpp \
+    mistake.cpp \
     scwid.cpp \
     singlechoice.cpp \
     widget.cpp
 
 HEADERS += \
+    disorder.h \
+    mistake.h \
     scwid.h \
     singlechoice.h \
     widget.h

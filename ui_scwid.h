@@ -15,6 +15,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,12 +26,17 @@ public:
     QPushButton *pushButton_3;
     QTextEdit *textEdit;
     QPushButton *pushButton_2;
-    QRadioButton *radioButton_4;
     QPushButton *pushButton;
-    QRadioButton *radioButton_2;
-    QRadioButton *radioButton;
-    QRadioButton *radioButton_3;
     QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
+    QPushButton *pushButton_7;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QRadioButton *radioButton;
+    QRadioButton *radioButton_2;
+    QRadioButton *radioButton_3;
+    QRadioButton *radioButton_4;
     QButtonGroup *buttonGroup;
 
     void setupUi(QWidget *SCWid)
@@ -51,30 +57,53 @@ public:
         pushButton_2 = new QPushButton(SCWid);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(51, 511, 80, 21));
-        radioButton_4 = new QRadioButton(SCWid);
-        buttonGroup = new QButtonGroup(SCWid);
-        buttonGroup->setObjectName(QString::fromUtf8("buttonGroup"));
-        buttonGroup->addButton(radioButton_4);
-        radioButton_4->setObjectName(QString::fromUtf8("radioButton_4"));
-        radioButton_4->setGeometry(QRect(52, 413, 88, 20));
         pushButton = new QPushButton(SCWid);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(570, 511, 80, 21));
-        radioButton_2 = new QRadioButton(SCWid);
-        buttonGroup->addButton(radioButton_2);
-        radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
-        radioButton_2->setGeometry(QRect(52, 307, 88, 20));
-        radioButton = new QRadioButton(SCWid);
-        buttonGroup->addButton(radioButton);
-        radioButton->setObjectName(QString::fromUtf8("radioButton"));
-        radioButton->setGeometry(QRect(52, 254, 88, 20));
-        radioButton_3 = new QRadioButton(SCWid);
-        buttonGroup->addButton(radioButton_3);
-        radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
-        radioButton_3->setGeometry(QRect(52, 360, 88, 20));
         pushButton_4 = new QPushButton(SCWid);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(830, 511, 80, 21));
+        pushButton_5 = new QPushButton(SCWid);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(570, 510, 80, 21));
+        pushButton_6 = new QPushButton(SCWid);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(50, 510, 80, 21));
+        pushButton_7 = new QPushButton(SCWid);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setGeometry(QRect(570, 510, 80, 21));
+        widget = new QWidget(SCWid);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(52, 214, 861, 261));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        radioButton = new QRadioButton(widget);
+        buttonGroup = new QButtonGroup(SCWid);
+        buttonGroup->setObjectName(QString::fromUtf8("buttonGroup"));
+        buttonGroup->addButton(radioButton);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+
+        verticalLayout->addWidget(radioButton);
+
+        radioButton_2 = new QRadioButton(widget);
+        buttonGroup->addButton(radioButton_2);
+        radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
+
+        verticalLayout->addWidget(radioButton_2);
+
+        radioButton_3 = new QRadioButton(widget);
+        buttonGroup->addButton(radioButton_3);
+        radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
+
+        verticalLayout->addWidget(radioButton_3);
+
+        radioButton_4 = new QRadioButton(widget);
+        buttonGroup->addButton(radioButton_4);
+        radioButton_4->setObjectName(QString::fromUtf8("radioButton_4"));
+
+        verticalLayout->addWidget(radioButton_4);
+
 
         retranslateUi(SCWid);
 
@@ -86,12 +115,15 @@ public:
         SCWid->setWindowTitle(QCoreApplication::translate("SCWid", "Form", nullptr));
         pushButton_3->setText(QCoreApplication::translate("SCWid", "\346\237\245\347\234\213\347\255\224\346\241\210", nullptr));
         pushButton_2->setText(QCoreApplication::translate("SCWid", "\344\270\212\344\270\200\351\242\230", nullptr));
-        radioButton_4->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
         pushButton->setText(QCoreApplication::translate("SCWid", "\344\270\213\344\270\200\351\242\230", nullptr));
-        radioButton_2->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
-        radioButton->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
-        radioButton_3->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
         pushButton_4->setText(QCoreApplication::translate("SCWid", "\350\277\224\345\233\236\350\217\234\345\215\225", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("SCWid", "\344\270\213\344\270\200\351\242\230", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("SCWid", "\344\270\212\344\270\200\351\242\230", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("SCWid", "\344\270\213\344\270\200\351\242\230", nullptr));
+        radioButton->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
+        radioButton_2->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
+        radioButton_3->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
+        radioButton_4->setText(QCoreApplication::translate("SCWid", "RadioButton", nullptr));
     } // retranslateUi
 
 };

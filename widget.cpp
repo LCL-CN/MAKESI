@@ -15,7 +15,7 @@ Widget::Widget(QWidget *parent)
     scw->hide();
 
 
-    connect(this->scw,&QWidget::windowTitleChanged,this,[=]{
+    connect(this->scw,&SCWid::closed,this,[=]{
         this->resize(1000,600);
     });
 
@@ -29,6 +29,23 @@ Widget::~Widget()
 
 void Widget::on_pushButton_4_clicked()
 {
+    scw->change(1);
+    scw->show();
+    this->resize(0,0);
+}
+
+
+void Widget::on_pushButton_10_clicked()
+{
+    scw->change(0);
+    scw->show();
+    this->resize(0,0);
+}
+
+
+void Widget::on_pushButton_5_clicked()
+{
+    scw->change(-1);
     scw->show();
     this->resize(0,0);
 }
